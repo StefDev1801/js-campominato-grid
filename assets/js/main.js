@@ -28,13 +28,13 @@ function createGrid(numberGridCell) {
     grid.insertAdjacentHTML('beforeend', gridCell)
 }
 }
-createGrid(numberGridCell100);//create 100 cell need to fix with css
-
+let button = document.querySelector('.btn')
+button = addEventListener('click', function () {
+    createGrid(numberGridCell100)
+})
 
 // fai che ogni cella sia cliccabile
-const button = addEventListener('click', function(){
 
-})
 // quando clicchi su una cella: fai si che ti dia il display.log con il numero dell'indice corrispettivo
 
 // posiziona la griglia in mezzo allo schermo e non far scomparire il bottone
