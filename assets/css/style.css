@@ -1,4 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header{
     display: flex;
     justify-content: space-around;
+}
+.grid{
+    display: flex;
+    flex-wrap:wrap ;
+}
+.grid_element100{
+    background-color: aqua;
+    width: 10%;
+    aspect-ratio: 1;
+    border: 1px solid black;
 }
