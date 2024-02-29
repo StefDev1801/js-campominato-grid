@@ -28,21 +28,17 @@ function createGrid(numberGridCell) {
         grid.insertAdjacentHTML('beforeend', gridCell)
 }}
 
-// let button = document.querySelector('.btn')
-// button = addEventListener('click', function () {
-//     createGrid(numberGridCell100)
-// })
+ let button = document.getElementsByClassName("btn")
+ button = addEventListener('click', function () {
+     createGrid(numberGridCell100)
+ }, {once: true})
 
-createGrid(numberGridCell100)//così ho una griglia tranquilla
 
 // fai che ogni cella sia cliccabile:
 // trova la lista
 const arrayGridCell = document.getElementsByClassName('grid_element100')
 console.log(arrayGridCell);
 //cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata
-function logNameCellAndColorBlue(params) {
-    
-}
 for (let i = 0; i < arrayGridCell.length; i++) {
     
     let elementgridCell = arrayGridCell[i];

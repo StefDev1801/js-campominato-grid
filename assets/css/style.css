@@ -17,3 +17,7 @@ header{
     aspect-ratio: 1;
     border: 1px solid black;
 }
+main{
+    width: 80%;
+    margin: auto;
+}
