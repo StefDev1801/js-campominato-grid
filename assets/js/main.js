@@ -15,6 +15,9 @@ const grid = document.querySelector('.grid');
 console.log(gridCell, grid);
 
 const numberGridCell100 = 100;
+const numberGridCell81 = 81;
+const numberGridCell49 = 49;
+
 
 let arrayGridCell =[]
 
@@ -38,25 +41,20 @@ function createGrid(numberGridCell) {
         grid.insertAdjacentHTML('beforeend', gridCell)
         
 }
-        arrayGridCell = document.getElementsByClassName('grid_element100')
-        console.log(arrayGridCell);
-        console.log('test');
-        for (let i = 0; i < arrayGridCell.length; i++) {
-            console.log('secondo test');
-            let elementgridCell = arrayGridCell[i];
-            console.log(elementgridCell);
-            
-           
-            
-            
-
-            //console.log(gridCell[element]);
-            elementgridCell.addEventListener('click', function(){
-            elementgridCell.style.backgroundColor = "lightblue";
-            i++
-            console.log(i);
-            })
-        }
+arrayGridCell = document.getElementsByClassName('grid_element100')
+console.log(arrayGridCell);
+console.log('test');
+for (let i = 0; i < arrayGridCell.length; i++) {
+    console.log('secondo test');
+    let elementgridCell = arrayGridCell[i];
+    console.log(elementgridCell);
+    //console.log(gridCell[element]);
+    elementgridCell.addEventListener('click', function(){
+    elementgridCell.style.backgroundColor = "lightblue";
+    i++
+    console.log(i);
+    })
+}
 }
 
 // const button = document.getElementsByClassName("btn").addEventListener('click', function (a) {
