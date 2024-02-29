@@ -12,7 +12,7 @@ const gridCell = `<div class="grid_element100"></div>`
 
 const grid = document.querySelector('.grid');
 
-console.log(grid, gridCell);
+console.log(gridCell, grid);
 
 const numberGridCell100 = 100;
 
@@ -24,16 +24,39 @@ const numberGridCell100 = 100;
  */
 function createGrid(numberGridCell) {
     for (let i = 0; i < numberGridCell; i++) {
-    // const element = array[i];
-    grid.insertAdjacentHTML('beforeend', gridCell)
-}
-}
-let button = document.querySelector('.btn')
-button = addEventListener('click', function () {
-    createGrid(numberGridCell100)
-})
+        // const element = array[i];
+        grid.insertAdjacentHTML('beforeend', gridCell)
+}}
 
-// fai che ogni cella sia cliccabile
+// let button = document.querySelector('.btn')
+// button = addEventListener('click', function () {
+//     createGrid(numberGridCell100)
+// })
+
+createGrid(numberGridCell100)//così ho una griglia tranquilla
+
+// fai che ogni cella sia cliccabile:
+// trova la lista
+const arrayGridCell = document.getElementsByClassName('grid_element100')
+console.log(arrayGridCell);
+//cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata
+function logNameCellAndColorBlue(params) {
+    
+}
+for (let i = 0; i < arrayGridCell.length; i++) {
+    
+    let elementgridCell = arrayGridCell[i];
+    console.log(elementgridCell);
+    
+    //console.log(gridCell[element]);
+    elementgridCell.addEventListener('click', function(e){
+    elementgridCell.style.backgroundColor = "lightblue";
+    i++
+    console.log(i);
+    })
+    
+}
+
 
 // quando clicchi su una cella: fai si che ti dia il display.log con il numero dell'indice corrispettivo
 
